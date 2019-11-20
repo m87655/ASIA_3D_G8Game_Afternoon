@@ -15,4 +15,6 @@ public class Chicken : MonoBehaviour
     public bool mission;               // 布林值 true false
     [Header("玩家名稱")]
     public string _name = "G8雞";      // 字串 ""
+
+
 }
