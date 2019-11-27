@@ -26,12 +26,14 @@ public class LearnAPIStatic : MonoBehaviour
     // 監聽玩家輸入事件、時間
     private void Update()
     {
-        print(Time.time);
+        //print(Time.time);
 
-        // 輸入.靜態屬性 - 滑鼠座標 (0, 0) Vector2
-
+        // 輸入.靜態屬性 - 滑鼠座標 (0, 0) Vector3
+        //print(Input.mousePosition);
         // 輸入.靜態方法 - 玩家是否按下空白鍵 - 傳回布林值方法
         // 按下空白鍵會顯示 true
         // 沒按空白鍵會顯示 false
+        //print(Input.GetKeyDown("space"));
+        print(Input.GetKeyDown(KeyCode.Space)); // 列舉 enum
     }
 }
