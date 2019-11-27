@@ -27,5 +27,11 @@ public class LearnAPIStatic : MonoBehaviour
     private void Update()
     {
         print(Time.time);
+
+        // 輸入.靜態屬性 - 滑鼠座標 (0, 0) Vector2
+
+        // 輸入.靜態方法 - 玩家是否按下空白鍵 - 傳回布林值方法
+        // 按下空白鍵會顯示 true
+        // 沒按空白鍵會顯示 false
     }
 }
