@@ -3,6 +3,7 @@
 public class LearnIf : MonoBehaviour
 {
     public bool openDoor;
+    public int score = 100;
 
     private void Start()
     {
@@ -25,6 +26,23 @@ public class LearnIf : MonoBehaviour
         {
             // if () 內的布林值為 false 執行 else {}
             print("關門");
+        }
+
+        if (score >= 60)
+        {
+            print("及格");
+        }
+        else if (score >= 50)
+        {
+            print("可以補考~");
+        }
+        else if (score >= 40)
+        {
+            print("可以付錢補考~ = =+");
+        }
+        else
+        {
+            print("被當惹");
         }
     }
 }
