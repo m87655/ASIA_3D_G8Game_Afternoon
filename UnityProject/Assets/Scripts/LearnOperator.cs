@@ -9,6 +9,11 @@ public class LearnOperator : MonoBehaviour
 
     public float G = 1.5f, H = 99.9f;
 
+    public float hp = 50;
+
+    public bool key;
+    public int enemy;
+
     private void Start()
     {
         #region 數學運算子
@@ -59,5 +64,12 @@ public class LearnOperator : MonoBehaviour
         print(!true);   // false
         print(!false);  // true
         #endregion
+    }
+
+    private void Update()
+    {
+        print("死亡：" + (hp <= 0));
+
+        print("過關：" + (key || enemy >= 5));
     }
 }
