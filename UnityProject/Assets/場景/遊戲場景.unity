@@ -1097,6 +1097,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   A: 10
   B: 3
+  C: 1
+  D: 1
+  E: 1
+  F: 10
+  G: 1.5
+  H: 99.9
 --- !u!1001 &856880722
 PrefabInstance:
   m_ObjectHideFlags: 0

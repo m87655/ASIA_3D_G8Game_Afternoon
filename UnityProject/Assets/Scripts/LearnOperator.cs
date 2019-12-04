@@ -41,5 +41,23 @@ public class LearnOperator : MonoBehaviour
         print(G == H);      // false
         print(G != H);      // true
         #endregion
+
+        #region 邏輯運算子
+        // 並且 && 有一個 false 結果就是 false
+        print(true && true);        // true
+        print(true && false);       // false
+        print(false && true);       // false
+        print(false && false);      // false
+
+        // 或者 || 有一個 true 結果就是 true
+        print(true || true);        // true
+        print(true || false);       // true
+        print(false || true);       // true
+        print(false || false);      // false
+
+        // 相反(顛倒)
+        print(!true);   // false
+        print(!false);  // true
+        #endregion
     }
 }
