@@ -7,6 +7,8 @@ public class LearnOperator : MonoBehaviour
     public int D = 1, E = 1;
     public int F = 10;
 
+    public float G = 1.5f, H = 99.9f;
+
     private void Start()
     {
         #region 數學運算子
@@ -29,6 +31,15 @@ public class LearnOperator : MonoBehaviour
         // F = F + 100;
         F += 100;
         print(F);
+        #endregion
+
+        #region 比較運算子
+        print(G > H);       // false
+        print(G < H);       // true
+        print(G >= H);      // false
+        print(G <= H);      // true
+        print(G == H);      // false
+        print(G != H);      // true
         #endregion
     }
 }
