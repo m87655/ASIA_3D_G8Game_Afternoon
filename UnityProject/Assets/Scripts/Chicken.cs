@@ -20,6 +20,7 @@ public class Chicken : MonoBehaviour
 
     public Transform tran;
     public Rigidbody rig;
+    public Animator ani;
 
     private void Update()
     {
@@ -56,7 +57,7 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Bark()
     {
-
+        // 按下空白鍵拍翅膀
     }
 
     /// <summary>
@@ -64,7 +65,7 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Catch()
     {
-
+        // 按下左鍵撿東西
     }
 
     /// <summary>
