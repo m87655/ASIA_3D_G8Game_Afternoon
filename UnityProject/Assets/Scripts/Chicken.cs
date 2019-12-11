@@ -8,7 +8,7 @@ public class Chicken : MonoBehaviour
     // 修飾詞 欄位類型 欄位名稱 (指定 值) 結束
     // 私人 - 隱藏 private (預設)
     // 公開 - 顯示 public 
-    [Header("移動速度")][Range(1, 100)]
+    [Header("移動速度")][Range(1, 2000)]
     public int speed = 10;             // 整數 1, 9999, -100
     [Header("旋轉速度"), Tooltip("G8雞的旋轉速度"), Range(1.5f, 200f)]
     public float turn = 20.5f;         // 浮點數
@@ -33,12 +33,13 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Run()
     {
-        float v = Input.GetAxis("Vertical");    // W 上 1、S 下 -1、沒按 0
-        // rig.AddForce(0, 0, speed * v);               // 世界座標
-        // tran.forward 區域座標 Z 軸
+        float v = Input.GetAxis("Vertical");        // W 上 1、S 下 -1、沒按 0
+        // rig.AddForce(0, 0, speed * v);           // 世界座標
         // tran.right   區域座標 X 軸
         // tran.up      區域座標 Y 軸
-        rig.AddForce(tran.forward * speed * v);          // 區域座標
+        // tran.forward 區域座標 Z 軸
+        // Time.deltaTime 當下裝置一幀的時間
+        rig.AddForce(tran.forward * speed * v * Time.deltaTime);     // 區域座標
     }
 
     /// <summary>
@@ -47,7 +48,7 @@ public class Chicken : MonoBehaviour
     private void Turn()
     {
         float h = Input.GetAxis("Horizontal");    // A 左 -1、D 右 1、沒按 0
-        tran.Rotate(0, turn * h, 0);
+        tran.Rotate(0, turn * h * Time.deltaTime, 0);
     }
 
     /// <summary>
