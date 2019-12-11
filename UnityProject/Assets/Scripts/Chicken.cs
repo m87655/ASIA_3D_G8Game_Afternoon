@@ -19,10 +19,12 @@ public class Chicken : MonoBehaviour
     #endregion
 
     public Transform tran;
+    public Rigidbody rig;
 
     private void Update()
     {
         Turn();
+        Run();
     }
 
     #region 方法區域
@@ -31,7 +33,12 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Run()
     {
-
+        float v = Input.GetAxis("Vertical");    // W 上 1、S 下 -1、沒按 0
+        // rig.AddForce(0, 0, speed * v);               // 世界座標
+        // tran.forward 區域座標 Z 軸
+        // tran.right   區域座標 X 軸
+        // tran.up      區域座標 Y 軸
+        rig.AddForce(tran.forward * speed * v);          // 區域座標
     }
 
     /// <summary>
