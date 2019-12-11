@@ -18,13 +18,20 @@ public class Chicken : MonoBehaviour
     public string _name = "G8雞";      // 字串 ""
     #endregion
 
+    public Transform tran;
+
+    private void Update()
+    {
+        Turn();
+    }
+
     #region 方法區域
     /// <summary>
     /// 跑步
     /// </summary>
     private void Run()
     {
-        
+
     }
 
     /// <summary>
@@ -32,7 +39,8 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Turn()
     {
-
+        float h = Input.GetAxis("Horizontal");    // A 左 -1、D 右 1、沒按 0
+        tran.Rotate(0, turn * h, 0);
     }
 
     /// <summary>
