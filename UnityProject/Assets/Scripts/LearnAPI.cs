@@ -21,4 +21,11 @@ public class LearnAPI : MonoBehaviour
         // new Vector3(1, 1, 1) * 5
         test2.localScale = Vector3.one * 5;
     }
+
+    private void Update()
+    {
+        // 代號.方法(對應引數)
+        test1.Rotate(0, 5, 0);
+        test2.Translate(0, 0, 1.5f);
+    }
 }
