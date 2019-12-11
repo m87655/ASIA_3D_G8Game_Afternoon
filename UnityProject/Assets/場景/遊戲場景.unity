@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 853998211}
   - component: {fileID: 853998212}
   - component: {fileID: 853998213}
+  - component: {fileID: 853998214}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7269\u4EF6"
   m_TagString: Untagged
@@ -1114,13 +1115,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853998208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e0041fd48f586e45904bdf812aa7c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openDoor: 0
   score: 100
+  combo: 0
+--- !u!114 &853998214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853998208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61416ca1cf9c7c54cb869b884d8e5be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test1: {fileID: 939118528}
 --- !u!1001 &856880722
 PrefabInstance:
   m_ObjectHideFlags: 0
