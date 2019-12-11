@@ -347,12 +347,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93158f26cc68b8d42b1d5bd1c222392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 650
   turn: 120
   mission: 0
   _name: "G8\u96DE"
   tran: {fileID: 193088216}
   rig: {fileID: 193088215}
+  ani: {fileID: 0}
 --- !u!54 &193088215
 Rigidbody:
   m_ObjectHideFlags: 0
