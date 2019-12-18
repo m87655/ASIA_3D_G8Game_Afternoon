@@ -26,6 +26,8 @@ public class Chicken : MonoBehaviour
     {
         Turn();
         Run();
+        Bark();
+        Catch();
     }
 
     #region 方法區域
@@ -57,7 +59,11 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Bark()
     {
-        // 按下空白鍵拍翅膀
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // 按下空白鍵拍翅膀
+            ani.SetTrigger("拍翅膀觸發器");
+        }
     }
 
     /// <summary>
@@ -65,7 +71,11 @@ public class Chicken : MonoBehaviour
     /// </summary>
     private void Catch()
     {
-        // 按下左鍵撿東西
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            // 按下左鍵撿東西
+            ani.SetTrigger("撿東西觸發器");
+        }
     }
 
     /// <summary>

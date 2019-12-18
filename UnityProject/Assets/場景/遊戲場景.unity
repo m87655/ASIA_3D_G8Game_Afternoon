@@ -353,7 +353,7 @@ MonoBehaviour:
   _name: "G8\u96DE"
   tran: {fileID: 193088216}
   rig: {fileID: 193088215}
-  ani: {fileID: 0}
+  ani: {fileID: 193088217}
 --- !u!54 &193088215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -373,6 +373,12 @@ Rigidbody:
 --- !u!4 &193088216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d623cd35a78380d4eb0457c4e483abed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1731107600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &193088217 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: d623cd35a78380d4eb0457c4e483abed,
     type: 3}
   m_PrefabInstance: {fileID: 1731107600}
   m_PrefabAsset: {fileID: 0}
@@ -1544,13 +1550,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939118525}
-  m_LocalRotation: {x: -0.29860368, y: 0.6370568, z: -0.29388997, w: -0.647011}
-  m_LocalPosition: {x: 9.265605, y: 8.234517, z: -3.2349522}
+  m_LocalRotation: {x: 0.29883623, y: -0.64085644, z: 0.29883623, w: 0.64085644}
+  m_LocalPosition: {x: 9.3, y: 8.5, z: -3}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -90, z: 0}
 --- !u!1001 &956725216
 PrefabInstance:
   m_ObjectHideFlags: 0
