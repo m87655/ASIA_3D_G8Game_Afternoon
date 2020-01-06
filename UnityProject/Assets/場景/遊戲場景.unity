@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657767, g: 0.4964127, b: 0.57481843, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657642, g: 0.49641162, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -347,13 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93158f26cc68b8d42b1d5bd1c222392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 650
-  turn: 120
-  mission: 0
-  _name: "G8\u96DE"
-  tran: {fileID: 193088216}
-  rig: {fileID: 193088215}
-  ani: {fileID: 193088217}
 --- !u!54 &193088215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -396,6 +389,25 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &193088219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193088213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e622a2bcc6971d4c88755e0feffe411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 373
+  turn: 20.5
+  mission: 0
+  _name: "G8\u96DE"
+  tran: {fileID: 193088216}
+  rig: {fileID: 193088215}
+  ani: {fileID: 193088217}
 --- !u!1001 &353852197
 PrefabInstance:
   m_ObjectHideFlags: 0
